@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
 <head>
-<title>NPM</title>
-<meta name="NPM" content="Overview">
+<title>npm</title>
+<meta name="npm" content="Overview">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body>
@@ -13,7 +13,7 @@
             <a class="nav-item nav-link" href="/">Home</a>
             <a class="nav-item nav-link" href="/javascript">JavaScript</a>
             <a class="nav-item nav-link" href="json">JSON</a>
-            <a class="nav-item nav-link active" href="/npm">NPM</a>
+            <a class="nav-item nav-link active" href="/npm">npm</a>
             <a class="nav-item nav-link" href="/nodejs">NodeJS</a>
             <a class="nav-item nav-link" href="/express">Express</a>
             <a class="nav-item nav-link" href="/restapi">REST API</a>
@@ -23,24 +23,40 @@
     <!-- NAVBAR ENDS -->
 
     <div class="container-fluid">
-      <h1 class="text-xl-center" style="padding: 1rem;">NPM</h1>
+      <h1 class="text-xl-center" style="padding: 1rem;">npm</h1>
       <div class="row">
         <div class="col-md-8 offset-md-2">
-      <h3>What is NPM?</h3>
+      <h3>What is npm?</h3>
       <p class="text-left">
-        JSON stands for "JavaScript Object Notation" and it's a text format for storing and transporting data. JSON syntax is derived from JavaScript but the JSON format is programming language independent.
-        The vast majority of APIs today are using the JavaScript Object Notation (JSON) to represent the structured data that they are exchanging.
+        npm is a package manager for the JavaScript programming language maintained by npm
+        It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
+        After installing you simply type the command line you need in the terminal.
       </p>
   
-      <h5>JSON code example:</h5>
+      <h5>Common npm commands example:</h5>
               
       <pre style="background-color: cadetblue;"><code class="text-left">
-  {                                 // Start of object
-    "name": "Bob",                  // Attribute value pair - String
-    "age": 75,                      // Attribute value pair - int
-    "isMember": true                // Attribute value pair - boolean
-  }                                 // End of Object
+
+
+npm i &lt;package&gt;       //install local package.
+npm i -g &lt;package&gt;    //install global package.
+npm un &lt;package&gt; :    //uninstall local package.
+npm up :                    //npm update packages.
+npm t :                     //run tests.
+npm ls :                    //list installed modules.   
       </code></pre>
+
+              <!-- JUMBOTRON BEGINS -->
+              <div class="container fluid text-center jumbotron">
+                <h1 class="display-4">Next we will learn about NodeJS!</h1>
+                <p class="lead">NodeJS (Node Package Manager) is a JavaScript runtime environment you can use to build backends like the one powering this site. You will also get to see npm in action.</p>
+                <hr class="my-4">
+                <p>Lets go you are on a roll! 👇</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="/nodeJS" role="button">Learn more</a>
+                </p>
+              </div>
+              <!-- JUMBOTRON ENDS -->
   
   </div>
   </div>
