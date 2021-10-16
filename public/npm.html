@@ -32,24 +32,40 @@
         It consists of a command line client, also called npm, and an online database of public and paid-for private packages, called the npm registry.
         After installing you simply type the command line you need in the terminal.
       </p>
-  
+
+      <p class="text-left">Install npm in your NodeJS project so you can install remote packages to use in your project. All you have to is type: "npm init -y" in your terminal. They -y indicates that you'll use the default options. This command will add a package.json file to your project which contains meta data about the project and also keeps track of dependencies.
+        Below you'll see what the json file contains.
+      </p>
+<pre style="background-color: cadetblue;"><code class="text-left">
+{
+  "name": "NodeJS-Documentation-Site",                                  
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+}
+</code></pre>
       <h5>Common npm commands example:</h5>
               
       <pre style="background-color: cadetblue;"><code class="text-left">
 
-
-npm i &lt;package&gt;       //install local package.
-npm i -g &lt;package&gt;    //install global package.
-npm un &lt;package&gt; :    //uninstall local package.
-npm up :                    //npm update packages.
-npm t :                     //run tests.
-npm ls :                    //list installed modules.   
+npm i &lt;package&gt; :       //install local package.
+npm i -g &lt;package&gt; :    //install global package.
+npm un &lt;package&gt; :      //uninstall local package.
+npm up :                      //npm update packages.
+npm t :                       //run tests.
+npm ls :                      //list installed modules.   
       </code></pre>
 
               <!-- JUMBOTRON BEGINS -->
               <div class="container fluid text-center jumbotron">
                 <h1 class="display-4">Next we will learn about NodeJS!</h1>
-                <p class="lead">NodeJS (Node Package Manager) is a JavaScript runtime environment you can use to build backends like the one powering this site. You will also get to see npm in action.</p>
+                <p class="lead">NodeJS is a JavaScript runtime environment you can use to build backends like the one powering this site. You will also get to see npm in action.</p>
                 <hr class="my-4">
                 <p>Lets go you are on a roll! 👇</p>
                 <p class="lead">
