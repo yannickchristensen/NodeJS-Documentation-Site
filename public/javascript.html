@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+<head>
+<title>JavaScript</title>
+<meta name="JavaScript" content="Overview">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <!-- NAVBAR BEINGS -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="/">Home</a>
+            <a class="nav-item nav-link active" href="/javascript">JavaScript</a>
+            <a class="nav-item nav-link" href="/json">JSON</a>
+            <a class="nav-item nav-link" href="/npm">NPM</a>
+            <a class="nav-item nav-link" href="/nodejs">NodeJS</a>
+            <a class="nav-item nav-link" href="/express">Express</a>
+            <a class="nav-item nav-link" href="/restapi">REST API</a>
+          </div>
+        </div>
+      </nav>
+    <!-- NAVBAR ENDS -->
+
+<div class="container-fluid">
+    <h1 class="text-xl-center" style="padding: 1rem;">JavaScript</h1>
+
+    <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h3>What is JavaScript?</h3>
+          <hr>
+            <p class="text-left">
+            JavaScript is a programming language that was first invented as a scripting language for implementing complex features on the web.
+            One way to this is DOM (Document Object Model) methods, with the object model JavaScript gets the power to create dynamic HTML. Javascript in conjuction with the DOM can change HTML elements, attributes and CSS styles.
+        </p>
+        <h5>Code example:</h5>
+            
+            <pre style="background-color: cadetblue;"><code class="text-left">
+&lt;button onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {document.getElementById("someId") = do something;}
+&lt;/script&gt;
+            </code></pre>
+            
+            <h3 style="padding-top: 2rem;">Data types and dynamic typing:</h3>
+            <hr>
+            <p class="text-left">JavaScript is a loosely typed and dynamic language. Variables in JavaScript are not directly associated with any particular value type, and any variable can be assigned (and re-assigned) values of all types:</p>
+
+            <pre style="background-color: cadetblue;"><code class="text-left">
+let foo = 42;    // foo is now a number
+foo     = 'bar'; // foo is now a string
+foo     = true;  // foo is now a boolean
+            </code></pre>
+            <h3 style="padding-top: 2rem;">Declaring variables:</h3>
+            <hr>
+            <p class="text-left">There are 3 ways to declare a JavaScript variable:
+                <li>Using var</li> 
+                <li>Using let</li>
+                <li>Using const</li> 
+            </p>
+            <h5 style="padding-top: 2rem;">What's the difference between the three ways?</h5>
+            <p class="text-left">
+                <li>var declarations are globally scoped or function scoped while let and const are block scoped.(Block scoping means declaring a variable, not just inside a function, but around any curly brackets like if statements or loops.)</li>
+                <li>var variables can be updated and re-declared within its scope. let variables can be updated but not re-declared. const variables can neither be updated nor re-declared.</li>
+                <li>They are all hoisted to the top of their scope. But while var variables are initialized with undefined, let and const variables are not initialized.</li>
+                <li>While var and let can be declared without being initialized, const must be initialized during declaration.</li>
+            </p>
+            <h3 style="padding-top: 2rem;">Functions in JavaScript:</h3>
+            <hr>
+            <p class="text-left">In javascript functions are first classed citizens which means that functions supports all the operational properties inherent to other entities. Therefore we can: </p>
+                <h5 style="padding-top: 2rem;">Assign a function to a variable:</h5>
+                <pre style="background-color: cadetblue;"><code class="text-left">
+var func = function (param) {
+    return param;
+}
+variable += func(param);
+                                </code></pre>
+                <h5 style="padding-top: 2rem;">Pass a function as an argument to another function and return a function from a function:</h5>
+                <pre style="background-color: cadetblue;"><code class="text-left">
+var func = function (param) {
+    return param;
+}
+                      
+function func1 (param1) {
+return 10;
+}
+
+func(func1); // ==10
+                                                    </code></pre>
+
+            <h5 style="padding-top: 2rem;">Callback functions</h5>
+            <p class="text-left">In javascript a callback is a function that is passed as an argument to another function. In the code snippet below, the arrow function is a callback function. An arrow function provides a shorter syntax over regular functions:</p>
+
+        <pre style="background-color: cadetblue;"><code class="text-left">
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + "/public/home.html");
+});
+                                            </code></pre>
+            
+        </div>
+      </div>
+</div>
+</div>
+        <!-- JUMBOTRON BEGINS -->
+        <div class="container fluid text-center jumbotron">
+            <h1 class="display-4">Next we will learn about JSON!</h1>
+            <p class="lead">JSON (JavaScript Object Notation) is a lightweight data-interchange format. </p>
+            <hr class="my-4">
+            <p>Lets go you're just getting started 👇</p>
+            <p class="lead">
+              <a class="btn btn-primary btn-lg" href="/json" role="button">Learn more</a>
+            </p>
+          </div>
+          <!-- JUMBOTRON ENDS -->
+    
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
