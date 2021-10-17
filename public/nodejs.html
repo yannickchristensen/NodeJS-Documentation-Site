@@ -13,7 +13,7 @@
             <a class="nav-item nav-link" href="/">Home</a>
             <a class="nav-item nav-link" href="/javascript">JavaScript</a>
             <a class="nav-item nav-link" href="/json">JSON</a>
-            <a class="nav-item nav-link" href="/npm">NPM</a>
+            <a class="nav-item nav-link" href="/npm">npm</a>
             <a class="nav-item nav-link active" href="/nodejs">NodeJS</a>
             <a class="nav-item nav-link" href="/express">Express</a>
             <a class="nav-item nav-link" href="/restapi">REST API</a>
@@ -22,12 +22,77 @@
       </nav>
     <!-- NAVBAR ENDS -->
 
-<div class="container-fluid text-center">
-    <h1>Node JS</h1>
-    <p class="text-left text-wrap"></p>
+    <div class="container-fluid">
+      <h1 class="text-xl-center" style="padding: 1rem;">NodeJS</h1>
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+      <h3>What is NodeJS?</h3>
+      <p class="text-left">
+        NodeJS is a runtime environment for JavaScript which makes it possible to build full stack web applications entirely in JavaScript.
+        Before NodeJS was introduced in 2009 it was impossible to write serverside JavaScript code. Now we can use NodeJS to handle HTTP requests, read HTML file in the servers filesystem and then send a respond back to the client so they can view the HTML file in their browser.
+      </p>
+      
+      <h3>How to install NodeJS?</h3>
+      <ol>
+        <li>Download the installer from <a href="https://nodejs.org/">the NodeJS website.</a></li>
+        <li>Run the installer.</li>
+        <li>Follow the installer steps, agree the license agreement and click the next button.</li>
+        <li>Restart your system/machine.</li>
+        <li>Make sure the installation was succesful by typing node -v in your terminal, you should get a response with a version number like this 👉 v12.16.3</li>
+        <li>You can run a JavaScript file by typing "node yourfile.js" in your terminal</li>
+      </ol>
+      <h3>How to use NodeJS in REPL (Read–eval–print loop) mode?</h3>
+        <ol>
+          <li>Make sure you have NodeJS installed by typing node -v in your terminal, you should get a response with a version number like this 👉 v12.16.3</li>
+          <li>Type "node" in your terminal window</li>
+          <li>Congratulations you are now in REPL mode, this will allow you to run JavaScript code directly in your terminal</li>
+          <li>Type "console.log('hello world') and see what happens</li>
+        </ol>
 
-</div>
+      <h3>What is nodemon?</h3>
 
+      <p class="text-left">Nodemon is a utility that will monitor for any changes in your source directory and automatically restart your server. This is convenient when developing as you can see the changes you made straight away.</p>
+
+      <h3>How to install nodemon?</h3>
+      <p class="text-left">Install nodemon by using npm with following command : "npm install -g nodemon".
+      </p>
+
+      <p class="text-left">You can also install nodemon as a deployment dependency. Inside your project directory type:"npm install --save-dev nodemon" in your terminal.
+        This will add nodemon to your devDependencies in your package.json file. This will allow you to create a script to run nodemon which you can configure as you like.
+      </p>
+      <pre style="background-color: cadetblue;"><code class="text-left">
+        {
+          "name": "NodeJS-Documentation-Site",                                  
+          "version": "1.0.0",
+          "description": "",
+          "main": "index.js",
+          "scripts": {
+            "watch": "nodemon",                                           //nodemon script
+            "test": "echo \"Error: no test specified\" && exit 1"
+          },
+            "keywords": [],
+            "author": "",
+            "license": "ISC",
+            "devDependencies": {
+              "nodemon": "^2.0.13"                                        //nodemon added is dependency
+            }
+        }
+        </code></pre>
+        <p class="text-left">You can run this watch script using npm with this command: "npm run watch", because we have set index.js as our main we don't have to specify which script to run.
+
+
+              <!-- JUMBOTRON BEGINS -->
+              <div class="container fluid text-center jumbotron">
+                <h1 class="display-4">Next we will learn about Express!</h1>
+                <p class="lead">Express is a back end web application framework for NodeJS.</p>
+                <hr class="my-4">
+                <p>Lets go you are on a roll! 👇</p>
+                <p class="lead">
+                  <a class="btn btn-primary btn-lg" href="/express" role="button">Learn more</a>
+                </p>
+              </div>
+              <!-- JUMBOTRON ENDS -->
+  
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
