@@ -13,7 +13,7 @@
             <a class="nav-item nav-link" href="/">Home</a>
             <a class="nav-item nav-link" href="/javascript">JavaScript</a>
             <a class="nav-item nav-link" href="/json">JSON</a>
-            <a class="nav-item nav-link" href="/npm.">NPM</a>
+            <a class="nav-item nav-link" href="/npm.">npm</a>
             <a class="nav-item nav-link" href="/nodejs">NodeJS</a>
             <a class="nav-item nav-link active" href="/express">Express</a>
             <a class="nav-item nav-link" href="/restapi">REST API</a>
@@ -33,8 +33,45 @@
   
       <h5>How to install express?</h5>
       <p class="text-left">
-        Express is a back end web application framework for NodeJS. 
+        Express is also very easy to install as we will just use npm for this as well. All you have to do is type "npm install express". 
+        Two things will happen; a directory containing the source code to your dependencies will be added to your main directory called node_modules and express with corresponding version number has been added to your package.json file, see below.
         </p>
+        <pre style="background-color: cadetblue;"><code class="text-left">
+          {
+            "name": "NodeJS-Documentation-Site",                                  
+            "version": "1.0.0",
+            "description": "",
+            "main": "index.js",
+            "scripts": {
+              "watch": "nodemon",  
+              "test": "echo \"Error: no test specified\" && exit 1"
+            },
+              "keywords": [],
+              "author": "",
+              "license": "ISC",
+              "dependencies": {                                       //express added as a dependency.
+                "express": "^4.17.1"
+              },
+              "devDependencies": {
+                "nodemon": "^2.0.13"
+              }
+          }
+          </code></pre>
+
+
+          <h5>How to build your first webapp with express?</h5>
+
+          <p class="text-left">It's very simple to wire a web app with Express and NodeJS. This is the setup for the home page in this web application, you'll see it's only a few lines of code.</p>
+          <pre style="background-color: cadetblue;"><code class="text-left">
+            const express = require('express');                         // imports the express module
+
+            const app = express();                                      // initialize express app
+            
+            app.get('/', (req, res) => {                                // create endpoint for home, when a user calls our browser with this endpoint we will serve them an html file called home.html
+                res.sendFile(__dirname + "/public/home.html");
+            });
+            
+            </code></pre>
 
   </div>
   </div>
@@ -47,16 +84,10 @@
             <hr class="my-4">
             <p>Keep going you've come so far! 👇</p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="/npm" role="button">Learn more</a>
+              <a class="btn btn-primary btn-lg" href="/restapi" role="button">Learn more</a>
             </p>
           </div>
           <!-- JUMBOTRON ENDS -->
-
-<div class="container-fluid text-center">
-    <h1>Express</h1>
-    <p class="text-left text-wrap"></p>
-
-</div>
 
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
